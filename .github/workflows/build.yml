@@ -20,3 +20,8 @@ jobs:
           pushd examples/c
           make bootstrap
           popd
+      - uses: actions/upload-artifact@v3
+        with:
+          name: executable
+          path: |
+            ./examples/c/bootstrap
