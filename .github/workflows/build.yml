@@ -19,6 +19,7 @@ jobs:
         run: |
           pushd examples/c
           make bootstrap
+          chmod +x bootstrap
           popd
       - uses: actions/upload-artifact@v3
         with:
